@@ -3,10 +3,19 @@
   src: url('SlimExtreme.ttf');
 }
 
+@font-face{
+  font-family: 'NixieOne';
+  src: url('NixieOne.ttf');
+}
+
 body{
   margin:auto;
   padding:0;
   background-color: gray;
+  background-image: url("Blurred-Background-Test.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 #Name{
@@ -14,12 +23,32 @@ body{
     left: 0;
     color: #1DDA00;
     text-align: center;
-    padding: 0px 20px 0px 20px;
+    padding: 50px 20px 50px 20px;
     border: 3px solid black;
-    border-radius: 5px;
+    border-radius: 20px;
     background-color: lightgray;
-    font-family: SlimExtreme;
-    letter-spacing: 3px;
+    font-family: NixieOne;
+    letter-spacing: -10px;
+    font-size: 500%;
+}
+
+#HamburgerMenuDiv{
+	position: fixed;
+	 border: 2px solid black;
+	 margin-left: 300px;
+	 margin-top: 100px;
+	 display: block;
+	 z-index: -1;
+  	 cursor: pointer;
+  	 height: 20px;
+}
+
+#HamburgerMenu span{
+	top: 44px;
+  	left: 18px;
+  	right: 18px;
+  	height: 8px;
+  	background: white;
 }
 
 #Virtuality{
@@ -32,8 +61,191 @@ body{
     color: black;
     text-align: center;
     border:3px solid black;
-    margin-top: 2px;
-    padding-top:0px;
-    text-decoration: none;
+    margin: 2px 2px 0 0;
+    padding: 10px 5px 10px 5px;
     line-height: 0;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.moveitup{
+	margin-top: 500px;
+}
+
+.c-hamburger {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 96px;
+  height: 96px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.c-hamburger:focus {
+  outline: none;
+}
+
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 44px;
+  left: 18px;
+  right: 18px;
+  height: 8px;
+  background: white;
+}
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #fff;
+  content: "";
+}
+
+.c-hamburger span::before {
+  top: -20px;
+}
+
+.c-hamburger span::after {
+  bottom: -20px;
+}
+
+.c-hamburger--htx {
+  background-color: #ff3264;
+}
+
+.c-hamburger--htx span {
+  transition: background 0s 0.3s;
+}
+
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+
+.c-hamburger--htx span::before {
+  transition-property: top, transform;
+}
+
+.c-hamburger--htx span::after {
+  transition-property: bottom, transform;
+}
+
+active state, i.e. menu open
+.c-hamburger--htx.is-active {
+  background-color: #cb0032;
+}
+
+.c-hamburger--htx.is-active span {
+  background: none;
+}
+
+.c-hamburger--htx.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.c-hamburger--htx.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.c-hamburger--htx.is-active span::before,
+.c-hamburger--htx.is-active span::after {
+  transition-delay: 0s, 0.3s;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
