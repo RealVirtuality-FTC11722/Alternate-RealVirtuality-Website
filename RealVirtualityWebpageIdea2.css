@@ -71,12 +71,20 @@
 body{
   margin:auto;
   padding:0;
-  background-color: gray;
-  background-image: url("Blurred-Background-Test.jpg");
+  background-color: blue;
+  
+  /*background-image: url("Blurred-Background-Test.jpg");*/
+  /*background-repeat: repeat;*/
+  /*background-size: 397px 251px;*/
+  /*background-attachment: fixed;*/
+  /*background-position: center;*/
+  
+  background-image: url("TileableBackground.png");
   background-repeat: repeat;
   background-size: 397px 251px;
   background-attachment: fixed;
   background-position: center;
+  
   padding: 0px;
   margin: 0px;
 }
