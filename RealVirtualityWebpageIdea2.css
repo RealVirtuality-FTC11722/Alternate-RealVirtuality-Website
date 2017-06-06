@@ -68,6 +68,11 @@
   src: url('.ttf');
 }*/
 
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
 body{
   margin:auto;
   padding:0;
@@ -92,9 +97,11 @@ body{
   margin: 0px;
   
   width: 100vw;
+  
+  
 }
 
-#Name{
+#name{
   position: fixed;
   left: 0;
   top: 0;
@@ -109,9 +116,11 @@ body{
   background-color: #4c4c4c;
   font-family: "enterthegrid";
   font-size: 4em;
+  
+  
 }
 
-#Number{
+#number{
   position: fixed;
   right: 0;
   color: white;
@@ -123,6 +132,8 @@ body{
   background-color: #4c4c4c;
   font-family: "enterthegrid";
   top: 0;
+  
+  
 }
 
 .guacamole{
@@ -134,39 +145,53 @@ body{
   padding: 10px 0px;
   text-align: center;
   position: relative;
+  
+  
 }
 
-#Welcome {
+#welcome {
   margin-top: 240px;
   margin-left: 845px;
   width: 400px;
+  
+  
 }
 
 #scrolltest {
   margin-top: 800px;
   margin-left: 600px;
   width: 400px;
+  
+  
 }
 
 .rank {
   font-weight: bold;
+  
+  
 }
 
-div#meettheteam ul {
+div#meetTheteam ul {
     font-size: 50%
+    
+    
 }
 
-#meettheteam {
+#meetTheteam {
   margin-top: 400px;
   margin-left: 80px;
   width: 400px;
+  
+  
 }
 
 
-#AvailableText {
+#availableText {
   width: 65%;
   right: 0px;
   position: absolute;
+  
+  
 }
 
 
@@ -176,6 +201,8 @@ div#meettheteam ul {
   overflow-x: hidden;
   overflow-y: auto;
   transform-origin-x: 100%;
+  
+  
 }
 
 .parallaxLayer {
@@ -185,25 +212,33 @@ div#meettheteam ul {
   bottom: 0;
   left: 0;
   transform-origin-x: 100%;
+  
+  
 }
 
 .parallaxLayerBase {
   transform: translateZ(0);
+  
+  
 }
 
 .parallaxLayerBack {
-  transform: translateZ(-1px) scale(2);
+  transform: translateZ(-1px) scale(1);
   background-repeat: repeat;
   background-image: url('BluprintBackground TEST.png');
   height: 1000%;
- 
+  
+  
 }
 
 .parallaxLayerDeepBack {
-  transform: translateZ(-2px);
+  transform: translateZ(-2px) scale(1);
   background-repeat: repeat;
+  background-position-x: 20vw;
   background-image: url('BluprintBackground TEST.png');
   height: 1000%;
+  
+  
 }
 
 
